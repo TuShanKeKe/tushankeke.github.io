@@ -840,6 +840,14 @@
   .form-submit:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(79,70,229,.45); }
   .form-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 
+  .form-error {
+    margin-top: 14px;
+    color: #dc2626;
+    font-size: .88rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
   .form-success {
     display: none;
     text-align: center;
@@ -1045,7 +1053,7 @@
     <div class="hero-inner">
       <span class="hero-badge">✦ 2026 级新生 · 金胡杨战队招新启动</span>
       <h1>遇见更优秀的自己，<br>从 <span class="highlight">加入我们</span> 开始</h1>
-      <p>新疆工程学院金胡杨战队，隶属于控制工程学院的科创劲旅，自 2020 年扎根西北赛场。加入我们，和机械、视觉、电控、宣传四大组别一起，把热爱变成战斗力。</p>
+<p>新疆工程学院金胡杨战队，隶属于控制工程学院的科创劲旅，自 2020 年扎根西北赛场。加入我们，和机械、硬件、视觉、电控、宣传五大组别一起，把热爱变成战斗力。</p>
       <div class="hero-btns">
         <a href="#signup" class="btn btn-primary">立即报名 →</a>
         <a href="#orgs" class="btn btn-ghost">了解战队</a>
@@ -1105,7 +1113,7 @@
             <span class="icon">🤝</span>
             <div>
               <strong>团队协作 · 跨组作战</strong>
-              <span>机械、视觉、电控、宣传四组协同，用高效协作诠释竞技精神。</span>
+<span>机械、硬件、视觉、电控、宣传五组协同，用高效协作诠释竞技精神。</span>
             </div>
           </li>
           <li>
@@ -1132,7 +1140,7 @@
     <div class="section-head reveal">
       <span class="section-tag">GROUPS</span>
       <h2>战队分组</h2>
-      <p>四个组别，各司其职、协同作战。</p>
+<p>五个组别，各司其职、协同作战。</p>
     </div>
 
     <div class="org-grid">
@@ -1141,6 +1149,13 @@
         <h3>机械组</h3>
         <p>机器人的"躯体与骨骼"。负责结构设计、建模、加工与装配，底盘定机动、云台定精度、装甲定抗性。</p>
         <div class="org-tags"><span>结构设计</span><span>建模</span><span>加工装配</span></div>
+      </div>
+
+      <div class="org-card reveal reveal-delay-1">
+        <div class="org-icon" style="background:linear-gradient(135deg,#2563eb,#38bdf8)">🔌</div>
+        <h3>硬件组</h3>
+        <p>机器人的"血脉与筋骨"。负责电路设计、PCB 绘制、传感器选型与电源管理，为电控与视觉提供稳定可靠的硬件平台。</p>
+        <div class="org-tags"><span>PCB</span><span>电路设计</span><span>传感器</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-1">
@@ -1176,21 +1191,21 @@
 
     <div class="org-grid">
       <div class="org-card reveal">
-        <img class="card-img" src="images/robot-field-01.jpg" alt="哨兵机器人赛场照">
+        <img class="card-img" src="images/robot-outdoor-02.jpg" alt="哨兵机器人外场照">
         <h3>哨兵机器人</h3>
         <p>赛场上唯一完全自主行动的地面单位，可作突击"尖兵"，也可作基地的最后防线。云台重力补偿 + 小陀螺规避伤害，生存力拉满。</p>
         <div class="org-tags"><span>自主导航</span><span>决策系统</span><span>防御</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-1">
-        <img class="card-img" src="images/robot-outdoor-01.jpg" alt="步兵机器人外场照">
+        <img class="card-img" src="images/robot-field-01.jpg" alt="步兵机器人赛场照">
         <h3>步兵机器人</h3>
         <p>高机动地面单位，发射 17mm 弹丸，兼具攻防与辅助能力。基于麦克纳姆轮与上供弹结构，弹道稳定、适应复杂地形。</p>
         <div class="org-tags"><span>麦克纳姆轮</span><span>17mm 弹丸</span><span>高机动</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-2">
-        <img class="card-img" src="images/robot-outdoor-02.jpg" alt="英雄机器人外场照">
+        <img class="card-img" src="images/robot-outdoor-01.jpg" alt="英雄机器人外场照">
         <h3>英雄机器人</h3>
         <p>全队核心输出单位，发射 42mm 弹丸。远程吊射、飞坡突袭、登陆高地，一台出色的英雄机器人是决定赛局胜负的关键手。</p>
         <div class="org-tags"><span>42mm 弹丸</span><span>吊射</span><span>核心输出</span></div>
@@ -1282,10 +1297,6 @@
         <img src="images/work-01.jpg" alt="备赛团队攻坚">
         <div class="overlay">备赛攻坚 · 全队协作</div>
       </div>
-      <div class="g-item reveal reveal-delay-1">
-        <img src="images/competition-03.jpg" alt="比赛现场全神贯注">
-        <div class="overlay">比赛现场 · 全神贯注</div>
-      </div>
       <div class="g-item reveal">
         <img src="images/work-02.jpg" alt="机器人深夜调试">
         <div class="overlay">深夜调试 · 只为更好</div>
@@ -1293,10 +1304,6 @@
       <div class="g-item g-wide reveal">
         <img src="images/workshop-03.jpg" alt="团队协同装配">
         <div class="overlay">团队装配 · 各司其职</div>
-      </div>
-      <div class="g-item reveal reveal-delay-1">
-        <img src="images/chongqing-02.jpg" alt="重庆之行合影">
-        <div class="overlay">赛场之余 · 同游重庆</div>
       </div>
       <div class="g-item reveal">
         <img src="images/mascot-design.jpg" alt="战队标识设计稿">
@@ -1394,7 +1401,7 @@
     <div class="faq-list">
       <div class="faq-item reveal">
         <button class="faq-q">零基础可以加入战队吗？<span class="chev">+</span></button>
-        <div class="faq-a"><p>当然可以！四个组别都有系统的新人培训与"老带新"机制，我们更看重好奇心与坚持，技能可以在实战中慢慢积累。</p></div>
+<div class="faq-a"><p>当然可以！五个组别都有系统的新人培训与"老带新"机制，我们更看重好奇心与坚持，技能可以在实战中慢慢积累。</p></div>
       </div>
 
       <div class="faq-item reveal">
@@ -1472,6 +1479,7 @@
             <select id="org" name="org" required>
               <option value="">请选择意向组别</option>
               <option>机械组</option>
+              <option>硬件组</option>
               <option>视觉组</option>
               <option>电控组</option>
               <option>宣传组</option>
@@ -1492,7 +1500,10 @@
           </label>
         </div>
 
+        <input type="hidden" name="botcheck" id="botcheck" value="">
+
         <button type="submit" class="form-submit" id="submitBtn">提交报名</button>
+        <p class="form-error" id="formError" style="display:none">提交失败，请稍后重试。</p>
       </form>
 
       <div class="form-success" id="formSuccess">
@@ -1617,6 +1628,8 @@
   const form = document.getElementById('signupForm');
   const successBox = document.getElementById('formSuccess');
   const submitBtn = document.getElementById('submitBtn');
+  /* 报名接收接口：腾讯云云函数「函数 URL」地址 */
+  const FORM_API_URL = 'https://1467112925-5j32vn3shh.ap-guangzhou.tencentscf.com';
 
   function validateField(input) {
     const value = input.value.trim();
@@ -1651,13 +1664,48 @@
     }
     if (!allValid) return;
 
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const college = document.getElementById('college').value;
+    const org = document.getElementById('org').value;
+    const intro = document.getElementById('intro').value.trim();
+    const formError = document.getElementById('formError');
+    formError.style.display = 'none';
+
     submitBtn.disabled = true;
     submitBtn.textContent = '提交中…';
-    setTimeout(() => {
-      form.style.display = 'none';
-      successBox.style.display = 'block';
-      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 900);
+
+    fetch(FORM_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        college: college,
+        org: org,
+        intro: intro || '未填写',
+        botcheck: document.getElementById('botcheck').value
+      })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          form.style.display = 'none';
+          successBox.style.display = 'block';
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          formError.textContent = '提交失败：' + (data.message || '请稍后重试');
+          formError.style.display = 'block';
+        }
+      })
+      .catch(() => {
+        formError.textContent = '网络异常，提交失败。请检查网络后重试，或直接联系招新群 QQ 123456789。';
+        formError.style.display = 'block';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '提交报名';
+      });
   });
 </script>
 </body>
