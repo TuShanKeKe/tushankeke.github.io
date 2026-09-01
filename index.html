@@ -456,6 +456,8 @@
     color: #fff;
     box-shadow: 0 8px 18px rgba(180,83,9,.25);
   }
+  .org-icon { overflow: hidden; padding: 0; background: linear-gradient(135deg,#b45309,#f59e0b); }
+  .org-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   .org-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
   .org-card p { color: var(--muted); font-size: .92rem; margin-bottom: 16px; }
@@ -875,13 +877,6 @@
   .form-success h3 { font-size: 1.4rem; margin-bottom: 8px; }
   .form-success p { color: var(--muted); }
 
-  .countdown {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 36px;
-    flex-wrap: wrap;
-  }
 
   .cd-box {
     background: rgba(255,255,255,.14);
@@ -1072,7 +1067,7 @@
       <div class="label">战队成立</div>
     </div>
     <div class="stat-card">
-      <div class="num" data-count="4">0</div>
+      <div class="num" data-count="5">0</div>
       <div class="label">核心组别</div>
     </div>
     <div class="stat-card">
@@ -1145,35 +1140,35 @@
 
     <div class="org-grid">
       <div class="org-card reveal">
-        <div class="org-icon" style="background:linear-gradient(135deg,#78350f,#d97706)">🛠️</div>
+<div class="org-icon"><img src="images/org-machanical.png" alt="机械组"></div>
         <h3>机械组</h3>
         <p>机器人的"躯体与骨骼"。负责结构设计、建模、加工与装配，底盘定机动、云台定精度、装甲定抗性。</p>
         <div class="org-tags"><span>结构设计</span><span>建模</span><span>加工装配</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-1">
-        <div class="org-icon" style="background:linear-gradient(135deg,#92400e,#f59e0b)">🔌</div>
+<div class="org-icon"><img src="images/org-hardware.png" alt="硬件组"></div>
         <h3>硬件组</h3>
         <p>机器人的"血脉与筋骨"。负责电路设计、PCB 绘制、传感器选型与电源管理，为电控与视觉提供稳定可靠的硬件平台。</p>
         <div class="org-tags"><span>PCB</span><span>电路设计</span><span>传感器</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-1">
-        <div class="org-icon" style="background:linear-gradient(135deg,#b45309,#fbbf24)">👁️</div>
+<div class="org-icon"><img src="images/org-vision.png" alt="视觉组"></div>
         <h3>视觉组</h3>
         <p>机器人的"眼睛与神经中枢"。负责视觉系统搭建与优化，涵盖图像采集、目标识别、雷达数据融合。</p>
         <div class="org-tags"><span>图像识别</span><span>目标跟踪</span><span>雷达融合</span></div>
       </div>
 
       <div class="org-card reveal reveal-delay-2">
-        <div class="org-icon" style="background:linear-gradient(135deg,#a16207,#eab308)">⚡</div>
+<div class="org-icon"><img src="images/org-mcu.jpg" alt="电控组"></div>
         <h3>电控组</h3>
         <p>机器人的"大脑与神经"。主控编程、传感器调试与电机驱动，让机器人"听令而行、指哪打哪"。</p>
         <div class="org-tags"><span>单片机</span><span>嵌入式</span><span>电机控制</span></div>
       </div>
 
       <div class="org-card reveal">
-        <div class="org-icon" style="background:linear-gradient(135deg,#7c2d12,#f59e0b)">📣</div>
+<div class="org-icon"><img src="images/org-media.jpg" alt="宣传组"></div>
         <h3>宣传组</h3>
         <p>战队的"声音与名片"。负责活动记录、素材剪辑、文案创作与平台推广，放大每一份技术价值。</p>
         <div class="org-tags"><span>摄影</span><span>剪辑</span><span>新媒体</span></div>
@@ -1218,14 +1213,14 @@
     <div class="section-head reveal">
       <span class="section-tag">TIMELINE</span>
       <h2>招新流程</h2>
-      <p>四步走，正式成为金胡杨战队的一员。</p>
+      <p>三步走，正式成为金胡杨战队的一员。</p>
     </div>
 
     <div class="timeline">
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
         <div class="tl-card">
-          <span class="tl-date">8 月 20 日 – 9 月 10 日</span>
+          <span class="tl-date">9 月 1 日 – 9 月 10 日</span>
           <h3>① 线上报名</h3>
           <p>填写报名表，选择 1–2 个意向组别，让战队更了解你。</p>
         </div>
@@ -1243,17 +1238,8 @@
       <div class="tl-item reveal">
         <div class="tl-dot"></div>
         <div class="tl-card">
-          <span class="tl-date">9 月 22 日 – 9 月 26 日</span>
-          <h3>③ 面试交流</h3>
-          <p>轻松的一对一/小组面试，聊聊你的兴趣与想法，无需紧张。</p>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
           <span class="tl-date">9 月 30 日</span>
-          <h3>④ 公布结果</h3>
+          <h3>③ 公布结果</h3>
           <p>短信 + 公众号同步通知，恭喜你正式成为金胡杨战队的一员！</p>
         </div>
       </div>
@@ -1415,11 +1401,6 @@
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-q">面试主要聊什么？<span class="chev">+</span></button>
-        <div class="faq-a"><p>聊聊你的兴趣、专业基础与想加入的组别，没有标准答案，真诚就好。</p></div>
-      </div>
-
-      <div class="faq-item reveal">
         <button class="faq-q">错过了线上报名怎么办？<span class="chev">+</span></button>
         <div class="faq-a"><p>别担心！可在 9 月战队开放日现场补报，也可添加招新咨询群联系管理员进行补录。</p></div>
       </div>
@@ -1431,13 +1412,7 @@
     <div class="section-head reveal">
       <span class="section-tag">SIGN UP</span>
       <h2>立即报名</h2>
-      <p>报名截止还有</p>
-      <div class="countdown" id="countdown">
-        <div class="cd-box"><div class="val" id="cd-days">00</div><div class="unit">天</div></div>
-        <div class="cd-box"><div class="val" id="cd-hours">00</div><div class="unit">时</div></div>
-        <div class="cd-box"><div class="val" id="cd-mins">00</div><div class="unit">分</div></div>
-        <div class="cd-box"><div class="val" id="cd-secs">00</div><div class="unit">秒</div></div>
-      </div>
+<p>报名时间：2026 年 9 月 1 日起</p>
     </div>
 
     <div class="form-wrap reveal">
@@ -1455,6 +1430,13 @@
           </div>
         </div>
 
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sid">学号 <span class="req">*</span></label>
+            <input type="text" id="sid" name="sid" inputmode="numeric" maxlength="10" placeholder="10 位学号，如 2025211888" required>
+            <span class="error-msg">请输入正确的 10 位学号（前四位为入学年份）</span>
+          </div>
+        </div>
         <div class="form-row">
           <div class="form-group">
             <label for="college">学院 <span class="req">*</span></label>
@@ -1509,7 +1491,7 @@
       <div class="form-success" id="formSuccess">
         <div class="check">✓</div>
         <h3>报名成功！</h3>
-        <p>感谢你的信任，我们会在 9 月 12 日前以短信通知面试交流安排，请保持手机畅通。</p>
+        <p>感谢你的信任，我们会在 9 月 30 日前以短信和公众号通知结果，请保持手机畅通。</p>
       </div>
     </div>
   </section>
@@ -1521,7 +1503,7 @@
       金胡杨战队
     </div>
     <p>地址：乌鲁木齐经济技术开发区（头屯河区）科创路 1350 号 · 控制工程学院金胡杨战队</p>
-    <p>咨询群：QQ 123456789 &nbsp;|&nbsp; 邮箱：jhy_team@xjie.edu.cn</p>
+    <p>咨询群：QQ 1034113692 &nbsp;|&nbsp; 邮箱：1449600356@qq.com</p>
     <ul class="foot-links">
       <li><a href="#about">关于我们</a></li>
       <li><a href="#orgs">战队分组</a></li>
@@ -1604,25 +1586,6 @@
     });
   });
 
-  /* ---------- 报名倒计时（截止 2026-09-10 23:59:59） ---------- */
-  const deadline = new Date('2026-09-10T23:59:59');
-  function updateCountdown() {
-    const diff = deadline - new Date();
-    if (diff <= 0) {
-      document.getElementById('cd-days').textContent = '00';
-      document.getElementById('cd-hours').textContent = '00';
-      document.getElementById('cd-mins').textContent = '00';
-      document.getElementById('cd-secs').textContent = '00';
-      return;
-    }
-    const pad = n => String(n).padStart(2, '0');
-    document.getElementById('cd-days').textContent = pad(Math.floor(diff / 86400000));
-    document.getElementById('cd-hours').textContent = pad(Math.floor(diff / 3600000) % 24);
-    document.getElementById('cd-mins').textContent = pad(Math.floor(diff / 60000) % 60);
-    document.getElementById('cd-secs').textContent = pad(Math.floor(diff / 1000) % 60);
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
 
   /* ---------- 表单校验 ---------- */
   const form = document.getElementById('signupForm');
@@ -1636,6 +1599,7 @@
     let valid = true;
     if (input.id === 'name') valid = value.length >= 2 && value.length <= 20;
     if (input.id === 'phone') valid = /^1[3-9]\d{9}$/.test(value);
+    if (input.id === 'sid') valid = /^(200\d|201\d|202\d|203\d|204\d|205\d|2060)\d{6}$/.test(value);
     if (input.type === 'select-one') valid = value !== '';
     input.classList.toggle('invalid', !valid);
     return valid;
@@ -1653,7 +1617,7 @@
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     let allValid = true;
-    ['name', 'phone', 'college', 'org'].forEach(id => {
+    ['name', 'phone', 'sid', 'college', 'org'].forEach(id => {
       const el = document.getElementById(id);
       if (!validateField(el)) allValid = false;
     });
@@ -1671,6 +1635,14 @@
     const intro = document.getElementById('intro').value.trim();
     const formError = document.getElementById('formError');
     formError.style.display = 'none';
+    const sid = document.getElementById('sid').value.trim();
+    const SID_KEY = 'jinyang_sid_submit';
+    const lastSid = localStorage.getItem(SID_KEY + ':' + sid);
+    if (lastSid && Date.now() - Number(lastSid) < 3600000) {
+      formError.textContent = '该学号1小时内已报名，请1小时后再试';
+      formError.style.display = 'block';
+      return;
+    }
 
     submitBtn.disabled = true;
     submitBtn.textContent = '提交中…';
@@ -1681,6 +1653,7 @@
       body: JSON.stringify({
         name: name,
         phone: phone,
+        sid: sid,
         college: college,
         org: org,
         intro: intro || '未填写',
@@ -1690,6 +1663,7 @@
       .then(res => res.json())
       .then(data => {
         if (data.success) {
+          localStorage.setItem(SID_KEY + ':' + sid, String(Date.now()));
           form.style.display = 'none';
           successBox.style.display = 'block';
           successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1699,7 +1673,7 @@
         }
       })
       .catch(() => {
-        formError.textContent = '网络异常，提交失败。请检查网络后重试，或直接联系招新群 QQ 123456789。';
+        formError.textContent = '网络异常，提交失败。请检查网络后重试，或直接联系招新群 QQ 1034113692。';
         formError.style.display = 'block';
       })
       .finally(() => {
