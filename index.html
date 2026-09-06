@@ -348,7 +348,7 @@
   /* ---------- 关于招新 ---------- */
   .about-grid {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     gap: 56px;
     align-items: center;
     max-width: 1100px;
@@ -361,7 +361,7 @@
     background: var(--gradient);
     padding: 40px;
     color: #fff;
-    min-height: 380px;
+    min-height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -384,12 +384,12 @@
   .about-text h3 { font-size: 1.45rem; margin-bottom: 16px; }
   .about-text p { color: var(--muted); margin-bottom: 18px; }
 
-  .about-points { list-style: none; display: grid; gap: 14px; margin-top: 22px; }
+  .about-points { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
 
   .about-points li {
     display: flex;
+    flex-direction: column;
     gap: 12px;
-    align-items: flex-start;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -1010,6 +1010,7 @@
   }
 
   @media (max-width: 560px) {
+    .about-points { grid-template-columns: 1fr; }
     section { padding: 72px 5vw; }
     .hero { padding: 110px 5vw 80px; }
     .hero-btns .btn { width: 100%; justify-content: center; }
@@ -1073,39 +1074,43 @@
       </div>
       <div class="about-text reveal reveal-delay-1">
         <h3>金胡杨精神</h3>
+      <p>胡杨被誉为“沙漠英雄树”，在戈壁荒漠中“生而千年不死，死而千年不倒，倒而千年不朽”。金胡杨战队以胡杨为名，把“艰苦奋斗、自强不息、扎根边疆、甘于奉献”的胡杨精神化为研发与赛场上的行动。</p>
+      <p>这份精神也写进我们的日常：不怕难题、不服输，敢于从零开始，也甘于在西北这片土地把热爱打磨成实力。</p>
         <p>"智慧共筑，开创未来"。战队为热爱创新的学子搭建开放包容、协同共进的实践平台，是学院培育科创人才、孵化创新成果的重要载体。</p>
         <p>从图纸到实车，从代码到赛场，完整经历一台机器人的诞生；和志同道合的伙伴一起，把想法变成现实。</p>
-        <ul class="about-points">
-          <li>
-            <span class="icon">🚀</span>
-            <div>
-              <strong>坚韧执着 · 迎难而上</strong>
-              <span>面对研发过程中的技术瓶颈与重重挑战，始终秉持迎难而上的勇气与决心。</span>
-            </div>
-          </li>
-          <li>
-            <span class="icon">🤝</span>
-            <div>
-              <strong>团队协作 · 跨组作战</strong>
-<span>机械、硬件、视觉、电控、宣传五组协同，用高效协作诠释竞技精神。</span>
-            </div>
-          </li>
-          <li>
-            <span class="icon">🎨</span>
-            <div>
-              <strong>赛场实战 · 经验积累</strong>
-              <span>在机器人设计、制造与实战中不断积累经验，已在西北赛区崭露头角。</span>
-            </div>
-          </li>
-          <li>
-            <span class="icon">🏅</span>
-            <div>
-              <strong>导师引领 · 系统培养</strong>
-              <span>依托控制工程学院，提供从零基础到赛场主力的完整成长路径。</span>
-            </div>
-          </li>
-        </ul>
       </div>
+    </div>
+    <div class="about-spirit reveal">
+      <ul class="about-points">
+        <li>
+          <span class="icon">🚀</span>
+          <div>
+            <strong>坚韧执着 · 迎难而上</strong>
+            <span>研发路上没有捷径，面对技术瓶颈与重重挑战，我们以胡杨般的韧劲迎难而上、敢于试错，把每一次困难都当作成长的阶梯。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🤝</span>
+          <div>
+            <strong>团队协作 · 跨组作战</strong>
+            <span>机械、硬件、视觉、电控、宣传五组无缝协同，从设计到装配、从代码到赛场紧密衔接，用高效协作诠释“1+1>2”的团队力量。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🎨</span>
+          <div>
+            <strong>赛场实战 · 经验积累</strong>
+            <span>在一轮轮备赛与对抗中反复打磨机器人与战术，用实战沉淀经验，让每场比赛都成为下一场胜利的起点。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🏅</span>
+          <div>
+            <strong>导师引领 · 系统培养</strong>
+            <span>依托控制工程学院，战队形成传帮带机制，让零基础成员也能在导师与学长带领下，逐步成长为独当一面的赛场主力。</span>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -1421,3 +1426,4 @@
 </script>
 </body>
 </html>
+  .about-spirit { max-width: 1000px; margin: 44px auto 0; }
